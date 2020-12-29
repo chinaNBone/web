@@ -1,0 +1,473 @@
+// toolbar 样式
+.nav-title {
+    float: left;
+    color: #00be6e;
+    height: 60px;
+    font-size: 14px;
+    border-bottom: #00be6e 2px solid;
+}
+
+.nav-btn {
+    float: right;
+
+    .nav-text-font {
+        padding-right: 20px;
+        color: #ccc
+    }
+
+    .nav-block {
+        cursor: pointer;
+        color: #777;
+
+        &:hover {
+            color: #00be6e;
+        }
+    }
+
+    .el-button {
+        margin-left: 10px;
+    }
+}
+
+.tool-row {
+    line-height: 40px;
+
+    .tool-col {
+        color: #777;
+        margin-right: 15px;
+        display: inline-block;
+    }
+}
+
+// 行间查询
+.search-row {
+    margin-bottom: 15px;
+
+    .el-input {
+        width: 200px;
+        margin-right: 10px;
+    }
+
+    .el-cascader,
+    .el-select {
+        .el-input {
+            width: 130px;
+        }
+    }
+
+    .el-date-editor {
+        margin-right: 10px;
+    }
+
+    .nav-text-font {
+        color: #999;
+        margin: 0 20px;
+    }
+
+    p {
+        color: #777;
+    }
+
+    .search-col {
+        display: inline-block;
+    }
+
+    .tool-row {
+
+        .tool-col {
+
+            color: #777;
+            font-size: 16px;
+            margin-right: 30px;
+            display: inline;
+
+            .tool-count {
+                color: #00be6e;
+            }
+        }
+    }
+}
+
+
+
+.courseTag {
+    .el-cascader-panel {
+        .el-scrollbar:first-child {
+            .el-scrollbar__wrap {
+                .el-cascader-menu__list {
+                    .el-cascader-node {
+                        .el-checkbox {
+                            display: none;
+                        }
+
+                        .el-radio {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .el-input {
+        .el-input__inner {
+            height: auto !important;
+        }
+    }
+}
+
+.el-table {
+
+    // 表格封面，logo
+    .image-box {
+
+        width: 120px;
+        height: 80px;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .image-logo-box {
+        width: 40px;
+        height: 40px;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            ;
+        }
+    }
+
+    // 表格操作按钮
+    .el-button {
+        padding: 0 !important;
+        margin-right: 10px;
+        font-size: 14px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+// 课程列表展示方式
+.item-course {
+    display: flex;
+    align-items: center;
+
+    div {
+        flex: 1;
+        max-width: 160px;
+        min-width: 160px;
+    }
+
+    .image-box {
+        max-width: 120px;
+        min-width: 120px;
+        height: 80px;
+        overflow: hidden;
+        margin-right: 10px;
+
+        & img {
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    h2 {
+        font-size: 16px;
+        color: #333;
+    }
+
+    span {
+        font-size: 14px;
+        display: block;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+}
+
+.dialog-btns {
+    margin-top: 40px;
+    margin-bottom: -10px;
+}
+
+// 图片上传
+.unload-row {
+    width: 600px;
+}
+
+.el-upload {
+    display: flex;
+    align-items: flex-start;
+    max-width: 450px;
+
+
+    .image-con {
+        position: relative;
+        width: 150px;
+        min-width: 150px;
+        margin-right: 15px;
+        height: 80px;
+        text-align: left;
+        overflow: hidden;
+
+        &.image-logo {
+            width: 80px;
+            min-width: 80px;
+        }
+
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .imang_hover {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: none;
+            background: rgba($color: #000000, $alpha: 0.2);
+            height: 100%;
+            width: 100%;
+            text-align: center;
+            color: #fff;
+
+            span {
+                line-height: 80px;
+                font-weight: 700;
+            }
+        }
+
+        &.image-user {
+            height: 150px;
+            border-radius: 50%;
+
+            .imang_hover {
+                span {
+                    line-height: 150px;
+                }
+            }
+        }
+
+        &:hover {
+            .imang_hover {
+                display: block;
+            }
+        }
+    }
+
+    .image-icon {
+        position: relative;
+        width: 150px;
+        min-width: 150px;
+        margin-right: 15px;
+        height: 80px;
+        border: solid 1px #ddd;
+        line-height: 80px;
+        color: #ddd;
+
+        &.image-logo {
+            width: 80px;
+            min-width: 80px;
+        }
+
+
+
+        .imang_hover {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: none;
+            background: rgba($color: #000000, $alpha: 0.2);
+            height: 100%;
+            width: 100%;
+            text-align: center;
+            color: #fff;
+
+            span {
+                line-height: 80px;
+                font-weight: 700;
+            }
+        }
+
+        &.image-user {
+            height: 150px;
+            border-radius: 50%;
+
+            .imang_hover {
+                span {
+                    line-height: 150px;
+                }
+            }
+        }
+
+        &:hover {
+            .imang_hover {
+                display: block;
+            }
+        }
+    }
+
+    .image-detail {
+        color: #aaa;
+        line-height: 20px;
+        text-align: left;
+    }
+}
+
+.el-tabs {
+    & .el-tabs__nav-wrap::after {
+        height: 0px;
+    }
+
+    .el-tabs__content {
+        .has-gutter {
+            th {
+                height: 46px;
+                line-height: 46px;
+                padding: 0;
+            }
+        }
+    }
+}
+
+.tag-content-btn {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    z-index: 1000;
+}
+
+.el-dialog {
+
+    .name-input,
+    .el-cascader {
+        width: 80%;
+    }
+}
+
+// 树形结构
+.tree-content {
+    & .tree-header {
+        display: flex;
+        height: 50px;
+        background: #f5f7fa;
+
+        div {
+            flex: 1;
+            text-align: center;
+        }
+
+        .tree-header-cell {
+            line-height: 50px;
+        }
+
+        .tree-header-title {
+            padding-left: 24px;
+            min-width: 430px;
+            max-width: 430px;
+            text-align: left;
+        }
+    }
+
+    .el-tree-node__content {
+        height: 50px;
+        border-bottom: 1px solid #EBEEF5;
+    }
+
+    .tree-body {
+        flex: 1;
+        display: flex;
+
+        .el-button {
+            padding: 0 !important;
+            margin-right: 10px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
+        div {
+            flex: 1;
+            text-align: center;
+            line-height: 60px;
+        }
+
+        .tree-body-name {
+            min-width: 406px;
+            max-width: 406px;
+            text-align: left;
+        }
+
+        .tree-body-name2 {
+            min-width: 384px;
+            max-width: 384px;
+            text-align: left;
+        }
+
+        .tree-body-name3 {
+            min-width: 366px;
+            max-width: 366px;
+            text-align: left;
+        }
+
+        .tree-body-name4 {
+            min-width: 348px;
+            max-width: 348px;
+            text-align: left;
+        }
+
+        .tree-body-name5 {
+            min-width: 330px;
+            max-width: 330px;
+            text-align: left;
+        }
+    }
+}
+
+// 开关按钮样式控制
+.listSwitch /deep/ .el-switch__label {
+    position: absolute;
+    display: none;
+    color: #2c2c2e;
+    width: 30px;
+}
+
+.listSwitch /deep/ .el-switch__label--left {
+    z-index: 9;
+    left: 50px;
+}
+
+.listSwitch /deep/ .el-switch__label--right {
+    z-index: 9;
+    left: 40px;
+}
+
+.listSwitch /deep/ .el-switch__label.is-active {
+    display: block;
+}
+
+// element ui notify
+.notify-only-message {
+    .el-notification__content {
+        margin-top: 2px;
+    }
+}
+
+
+.preview {
+    .el-tabs__content {
+        overflow: auto;
+        height: 400px;
+    }
+} 

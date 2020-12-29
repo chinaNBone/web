@@ -1,0 +1,1286 @@
+// g-     body区域
+// l-     导航以外区域
+// m-     l- 下的modal
+// d-     编辑、添加、详情样式归类
+// el-    element-ui样式调整
+// btn-   按钮样式
+// color- 文字颜色
+
+.g-sys-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+
+  .el-menu-demo {
+    .el-menu-item {
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
+
+  .userinfo {
+    margin-top: 0;
+  }
+}
+
+.el-tooltip__popper.is-light {
+  max-width: 500px;
+  font-size: 14px;
+}
+
+.el-tooltip__popper.is-dark {
+  max-width: 300px;
+  font-size: 14px;
+}
+
+.g-title-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.g-nav {
+  width: 100%;
+  overflow: hidden;
+  overflow: auto;
+}
+
+.l-mod {
+  margin: 20px auto 0;
+  width: 1200px;
+  position: relative;
+}
+
+.l-title {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+// 边框阴影
+.l-shadow {
+  box-shadow: 0px 0px 15px #ccc;
+}
+
+.d-border-d {
+  border-bottom: dashed 1px #ccc;
+}
+
+// 采用flex布局
+.l-flex {
+  display: flex;
+  align-items: flex-start;
+}
+
+.m-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+// 菜单样式重置
+.project-left-menu {
+  padding: 10px 0;
+  background: #fff;
+  min-width: 200px;
+
+  .el-scrollbar__wrap {
+    margin-bottom: -18px !important;
+    padding-bottom: 10px;
+
+    .el-scrollbar__view {
+      .el-menu {
+        .el-submenu {
+          .el-submenu__title {
+            line-height: 40px;
+            height: 40px;
+            color: #777;
+            font-size: 16px;
+
+            &:hover {
+              background: none;
+            }
+          }
+
+          .el-menu {
+            padding-left: 20px;
+
+            .el-menu-item-group {
+              .el-menu-item-group__title {
+                padding: 0;
+              }
+
+              .el-menu-item {
+                height: 40px;
+                line-height: 40px;
+                padding: 0;
+                padding-left: 30px !important;
+                min-width: auto;
+
+                &.is-active {
+                  color: #00be6e !important;
+                  background-color: #fff !important;
+
+                  &:focus {
+                    background: none;
+                  }
+                }
+
+                &:focus {
+                  background: none;
+                }
+
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// 编辑页面模板
+.l-edit {
+  border-radius: 4px;
+  width: 960px;
+  margin: 30px auto;
+  padding: 10px 30px 30px 30px;
+  box-shadow: 0px 0px 15px #ccc;
+}
+
+// 页面导航标题
+.l-mod-tool {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: solid 1px #ccc;
+  margin-bottom: 20px;
+
+  h2 {
+    padding: 10px 10px;
+    border-bottom: solid 2px #00be6e;
+    font-size: 16px;
+  }
+
+  div {
+    color: #777;
+    cursor: pointer;
+    font-size: 14px;
+
+    &:hover {
+      color: #00be6e;
+    }
+  }
+}
+
+.el-input,
+.el-date-editor {
+  margin-right: 15px;
+}
+
+.el-tabs {
+  .el-tabs__header {
+    border-bottom: solid 1px #ccc;
+    margin-bottom: 20px;
+  }
+}
+
+.el-dialog {
+  .el-input__inner {
+    padding-right: 45px;
+  }
+
+  .el-radio {
+    font-size: 16px;
+    color: #333;
+  }
+
+  .el-radio-text {
+    font-size: 12px;
+    color: #777;
+    line-height: 16px;
+    padding-left: 24px;
+    margin-bottom: 10px;
+  }
+
+  .el-date-editor {
+    padding-right: 15px;
+
+    .el-range-input {
+      width: 75%;
+    }
+  }
+}
+
+// 面包屑
+.el-breadcrumb {
+  .el-breadcrumb__item {
+    .el-breadcrumb__inner {
+      color: #999;
+    }
+
+    i {
+      color: #999;
+    }
+  }
+}
+
+.color-red {
+  color: #ff0000;
+}
+
+.color-orange {
+  color: #ff9900;
+  cursor: pointer;
+}
+
+.color-green {
+  color: #00be6e;
+}
+
+.color-gray {
+  color: #ccc;
+}
+
+.file-list-demo {
+  .el-upload {
+    max-width: 150px;
+  }
+}
+
+.btn-search {
+  background: #ff9900;
+  color: #fff;
+
+  &:hover {
+    background: #fff;
+    border: solid 1px #ff9900;
+    color: #ff9900;
+  }
+}
+
+// 实心按钮
+.btn-add {
+  background: #00be6e;
+  color: #fff;
+
+  &:hover {
+    background: #33cb8b;
+  }
+}
+
+// 镂空按钮
+.btn-add1 {
+  background: #fff;
+  border: solid 1px #00be6e;
+  color: #00be6e;
+
+  &:hover {
+    background: #e6f9f1;
+    border: solid 1px #b3ecd4;
+  }
+}
+
+// 分页
+.m-pages {
+  .el-pagination {
+    text-align: center;
+
+    .el-pager {
+      li.active {
+        background: #00be6e !important;
+        border: solid 1px #00be6e !important;
+      }
+
+      .number {
+        &:hover {
+          background: #00be6e !important;
+          border: solid 1px #00be6e !important;
+          color: #fff !important;
+        }
+      }
+    }
+  }
+}
+
+// 标题前面类型
+.d-title-type {
+  display: inline-block;
+  padding: 2px 8px;
+  border: solid 1px #00be6e;
+  color: #00be6e;
+  border-radius: 3px;
+  font-size: 12px !important;
+  margin-right: 10px;
+}
+
+.d-title-type-color {
+  border: solid 1px #777 !important;
+  color: #777 !important;
+}
+
+// 添加边框的from
+.d-from {
+  border-top: solid 1px #ccc;
+  margin-bottom: 60px;
+  width: 100%;
+
+  .demo-form-inline {
+    margin-bottom: 20px;
+  }
+
+  .el-form-item {
+    width: 50%;
+    border-bottom: solid 1px #ccc;
+    border-left: solid 1px #ccc;
+    margin: 0;
+
+    &:nth-child(even) {
+      border-right: solid 1px #ccc;
+    }
+
+    .el-form-item__label {
+      text-align: center;
+      padding: 10px;
+      border-right: solid 1px #ccc;
+    }
+
+    .el-form-item__content {
+      width: 70%;
+      padding: 10px;
+      margin: 0 auto;
+
+      .el-select,
+      .el-date-editor {
+        width: 100%;
+      }
+
+    }
+
+    // 占位优化表格
+    &.el-from-null {
+      border-left: none;
+      border-right: none;
+
+      .el-form-item__content {
+        padding: 20px;
+      }
+    }
+
+    &.el-from-perch {
+      width: 0px;
+      height: 61px;
+      border-left: none;
+    }
+
+    &.el-from-row {
+      width: 900px;
+      border-right: 1px solid #ccc;
+
+      .el-form-item__content {
+        width: 85%;
+      }
+    }
+
+    &.el-from-row2 {
+      width: 900px;
+      border-right: 1px solid #ccc;
+      border-top: 1px solid #ccc;
+      border-bottom: none;
+
+      .el-form-item__label {
+        height: 172px;
+        line-height: 172px;
+      }
+
+      .el-form-item__content {
+        width: 85%;
+
+        .el-textarea__inner {
+          resize: none
+        }
+      }
+    }
+
+    &.el-from-row3 {
+
+      width: 900px;
+      border-bottom: none;
+      border-left: none;
+      position: relative;
+
+      :hover .el-from-icoDel {
+        display: block;
+      }
+
+      &:nth-child(even) {
+        border-right: none;
+        border-top: none
+      }
+
+      .el-form-item__content {
+        width: 100%;
+        padding: 0;
+
+
+        .el-form-item {
+          width: 20%;
+        }
+
+
+        .el-form-item__label {
+          width: 100% !important;
+          border-right: none;
+          border-bottom: 1px solid #ccc;
+
+        }
+
+        .el-input,
+        .el-date-editor {
+          padding: 10px
+        }
+
+        .el-input__suffix {
+          right: 11px
+        }
+
+        .el-from-row3-last {
+          width: 60%;
+          border-right: 1px solid #ccc;
+          border-left: none;
+
+          .el-input,
+          .el-date-editor {
+            padding: 10px 25px 10px 10px
+          }
+
+          .el-input__suffix {
+            right: 26px
+          }
+        }
+
+
+      }
+    }
+
+    &.el-from-row5 {
+      width: 900px;
+      border-bottom: none;
+      border-left: none;
+      position: relative;
+
+      :hover .el-from-icoDel {
+        display: block;
+      }
+
+      &:nth-child(even) {
+        border-right: none;
+        border-top: none
+      }
+
+      .el-form-item__content {
+        width: 100%;
+        padding: 0;
+
+        .el-form-item {
+          width: 300px;
+        }
+
+        .el-form-item__label {
+          width: 100% !important;
+          border-right: none;
+          border-bottom: 1px solid #ccc;
+
+        }
+
+        .el-input,
+        .el-date-editor {
+          padding: 10px
+        }
+
+        .el-input__suffix {
+          right: 11px
+        }
+
+        .el-from-row5-last {
+          border-right: 1px solid #ccc;
+          border-left: none;
+
+          .el-input,
+          .el-date-editor {
+            padding: 10px 25px 10px 10px
+          }
+
+          .el-input__suffix {
+            right: 26px
+          }
+        }
+      }
+
+    }
+
+    .el-from-icoDel {
+      color: red;
+      font-size: 20px;
+      position: absolute;
+      right: -10px;
+      bottom: 30px;
+      margin-bottom: -10px;
+      cursor: pointer;
+      display: none;
+    }
+
+    &.el-from-cell {
+      border-bottom: none;
+      border-left: none;
+
+      .el-form-item {
+        border-right: none;
+        width: 100%;
+
+        .el-form-item__content {
+          padding: 10px;
+          width: 70%;
+        }
+      }
+
+      .el-form-item__content {
+        padding: 0;
+        width: 100%;
+      }
+    }
+
+    &.el-from-cell2 {
+      height: 122px;
+
+      .el-form-item__label {
+        padding: 40px 10px;
+      }
+    }
+
+    &.el-from-cell3 {
+      height: 122px;
+      float: right;
+      border-right: 1px solid #ccc;
+
+      .el-form-item__label {
+        padding: 41px 10px;
+      }
+    }
+
+    &.el-from-cell4 {
+      height: 244px;
+
+      .el-form-item__label {
+        padding: 102px 10px;
+        // border-right: none;
+      }
+
+      .el-form-item__content {
+        padding: 0px;
+
+        .el-form-item {
+          width: 329px;
+          border-left: none;
+
+          .el-form-item__label {
+            padding: 10px;
+            border-right: solid 1px #ccc;
+          }
+
+          .el-form-item__content {
+            padding: 8px 10px;
+            width: 194px;
+          }
+
+          &:nth-child(even) {
+            border-right: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+// toolBar
+.tool-bar {
+  background: #333;
+  height: 60px;
+  width: 100%;
+
+  .m-tool {
+    margin: 0 auto;
+    width: 1200px;
+    display: flex;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+
+    .m-tool-title {
+      border-left: 4px solid #00be6e;
+      color: #fff;
+      height: 30px;
+      line-height: 30px;
+      font-size: 18px;
+      padding-left: 10px;
+    }
+  }
+}
+
+// 检索栏
+.m-search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+
+  .el-input {
+    width: 220px;
+  }
+
+  .s-el-input {
+    width: 150px;
+    margin-right: 15px;
+
+    .el-input {
+      width: 100%;
+    }
+  }
+}
+
+// 列表展示
+.m-mod {
+  margin-top: 30px;
+
+  .d-list {
+    li {
+      display: inline-block;
+      border: solid 1px #ccc;
+      width: 590px;
+      margin-right: 20px;
+      margin-bottom: 20px;
+      position: relative;
+
+      &:nth-child(even) {
+        margin-right: 0px;
+      }
+
+      .d-icon {
+        width: 25px;
+        height: 25px;
+        text-align: center;
+        line-height: 25px;
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        border-radius: 50%;
+        background-color: #ff0000;
+        color: #fff;
+        cursor: pointer;
+        font-weight: 600;
+      }
+
+      .d-msg {
+        padding: 15px 38px 15px 15px;
+        width: 100%;
+        border-bottom: solid 1px #ccc;
+
+        h2 {
+          font-size: 18px;
+          color: #333;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          padding-bottom: 8px;
+
+          .d-title-type {
+            display: inline-block;
+            padding: 2px 8px;
+            border: solid 1px #00be6e;
+            color: #00be6e;
+            border-radius: 3px;
+            font-size: 12px;
+            vertical-align: text-bottom;
+          }
+        }
+
+        p {
+          color: #777;
+          font-size: 14px;
+          line-height: 20px;
+
+          span {
+            margin-right: 20px;
+          }
+
+          &.d-msg-text {
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            height: 20px;
+          }
+        }
+      }
+
+      .d-start {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 40px;
+        color: #777;
+        padding: 0 15px;
+        font-size: 14px;
+
+        span {
+          display: inline-block;
+          margin-left: 10px;
+
+          &:first-child {
+            margin-left: 0px;
+          }
+        }
+
+        .d-start-btn {
+          color: #00be6e;
+
+          span {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+
+.slot-line {
+  max-height: 150px;
+  min-height: 150px;
+  padding: 10px 0 0 0;
+  overflow-y: auto;
+
+  .slot-center {
+    display: block;
+    margin: 0 !important;
+    line-height: 30px;
+  }
+
+  .faileList-box {
+    h3 {
+      font-size: 14px;
+      color: #ff0000;
+    }
+
+    .faileList {
+      padding-left: 20px;
+    }
+  }
+}
+
+// 侧边栏导航
+.m-nav {
+  max-width: 200px;
+  flex: 1;
+  padding: 10px 20px;
+  line-height: 40px;
+  border-radius: 4px;
+  margin-right: 20px;
+
+  h2 {
+    color: #777;
+    font-size: 16px;
+  }
+
+  ul {
+    li {
+      cursor: pointer;
+
+      &:hover {
+        background: #fff;
+        color: #00be6e;
+      }
+    }
+  }
+}
+
+.l-back {
+  color: #fff;
+  margin-left: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.f-back {
+  flex: 1;
+  text-align: right;
+}
+
+// 侧边导航content
+.m-nav-con {
+  flex: 1;
+  padding: 10px 20px;
+  // border: solid 1px #ccc;
+  border-radius: 4px;
+}
+
+// 详情头部文字占位
+.d-margin {
+  padding: 10px 0;
+  color: #777;
+
+  span {
+    margin-right: 10px;
+  }
+
+  .d-margin-des {
+    margin-right: 30px;
+  }
+}
+
+// 详情头部展示
+.d-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  h2 {
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+
+    span {
+      max-width: 744px;
+      // min-width: 500px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      font-size: 18px;
+      color: #333;
+    }
+
+    .el-input {
+      max-width: 744px;
+      font-size: 18px;
+      color: #333;
+    }
+
+    .d-title-type {
+      display: inline-block;
+      padding: 2px 8px;
+      border: solid 1px #00be6e;
+      color: #00be6e;
+      border-radius: 3px;
+      font-size: 12px;
+      vertical-align: text-bottom;
+      margin-right: 10px;
+    }
+
+    i {
+      color: #ccc;
+      margin-right: 10px;
+      cursor: pointer;
+
+      &:hover {
+        color: #00be6e;
+      }
+    }
+
+    .d-title-icon {
+      border: solid 1px #ccc;
+    }
+  }
+
+}
+
+// 调研汇总统计
+.d-info {
+  .tab {
+    .d-space-between {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+
+      .btn-search {
+        margin-right: 0;
+      }
+    }
+
+    .d-sum {
+      padding-bottom: 20px;
+
+      button {
+        margin-right: 20px;
+      }
+
+      .d-data {
+        display: inline-block;
+      }
+
+      .m-search {
+        display: inline-block;
+        width: 305px;
+        margin-bottom: 0;
+      }
+
+      &>span {
+        color: #999999;
+      }
+
+      .d-data {
+        &>span {
+          color: #999999;
+        }
+      }
+    }
+
+    .d-con {
+      padding: 0 0 20px 0;
+
+      li {
+        div {
+          font-size: 14px;
+
+          .d-con-que {
+
+            .d-title-count {
+              margin-right: 10px;
+              font-size: 20px;
+              font-weight: 400px;
+            }
+          }
+
+          .d-con-btn {
+            min-width: 130px;
+            max-width: 130px;
+          }
+        }
+
+        .d-border-d {
+          padding-bottom: 10px;
+          margin-bottom: 10px;
+        }
+
+        .d-con-progress {
+
+          li {
+            margin-bottom: 10px;
+            border: none;
+            padding: 5px 10px;
+
+            div {
+              min-width: 0;
+            }
+
+            &>span {
+              display: inline-block;
+            }
+
+            span:nth-child(1) {
+              width: 120px;
+            }
+
+            span:nth-child(2) {
+              display: inline-block;
+              width: 500px;
+            }
+
+            span:nth-child(3) {
+              width: 80px;
+              text-align: left;
+              padding-left: 20px;
+            }
+
+            span:nth-child(4) {
+              width: 100px;
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// 问卷编辑
+.d-info {
+  .d-des {
+    margin: 20px;
+  }
+
+  h2 {
+    font-size: 18px;
+    color: #777;
+  }
+
+  .d-con {
+    padding: 20px;
+
+    li {
+      padding: 20px;
+      border: dashed 1px #ccc;
+      margin-bottom: 20px;
+
+      &.d-li-flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      div {
+        min-width: 700px;
+        flex: 1;
+        color: #333;
+        font-size: 16px;
+
+        &.d-con-btn {
+          min-width: 80px;
+          max-width: 80px;
+
+          i {
+            cursor: pointer;
+            display: inline-block;
+            margin-left: 10px;
+            font-size: 20px;
+            color: #777;
+
+            &:hover {
+              color: #00be6e;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .d-mod {
+    background: #eee;
+    padding: 20px;
+    margin-bottom: 30px;
+
+    .d-mod-q,
+    .d-mod-a {
+      margin-bottom: 20px;
+
+      .btn-add {
+        margin-top: 15px;
+      }
+
+      .d-mod-a-opt {
+        margin-bottom: 20px;
+      }
+
+      h2 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px;
+
+        span {
+          font-size: 16px;
+          color: #333;
+        }
+
+        .el-checkbox {
+          .el-checkbox__label {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+
+  .d-set {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+}
+
+// 上传图片
+.orginUploader {
+  width: 100%;
+
+
+  .image-name {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    line-height: 100px;
+    color: #777;
+    height: 100px;
+    background: #eee;
+  }
+}
+
+.upload-demo {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+//表格头像姓名电话
+.d-headAll {
+  display: flex;
+  align-items: center;
+
+  .d-headImg {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+  .d-headTel {
+    color: rgb(153, 153, 153);
+  }
+}
+
+// 证书
+.dialog-image-preview {
+  .el-dialog__header {
+    display: none;
+  }
+
+  .el-dialog__body {
+    padding: 0;
+  }
+}
+
+.dialog-cert-preview {
+  .el-dialog {
+    margin-top: 10vh !important;
+  }
+}
+
+.cert-box {
+  display: flex;
+  justify-content: space-between;
+  border: solid 1px #eee;
+
+  .cert-view {
+    flex: 1;
+    border: 8px solid #eee;
+    // width: 100%;
+    display: block;
+    position: relative;
+    height: 500px;
+
+    img.background-base {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+
+
+    .cert-preview {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      z-index: 10;
+      padding: 100px 30px;
+      color: #000;
+
+      .item-left {
+        flex: 1;
+
+
+        .cert-title-sub {
+          font-size: 18px;
+          text-align: center;
+          font-weight: 700;
+          letter-spacing: 2px;
+          padding: 0 40px;
+        }
+
+        .cert-title {
+          display: block;
+          text-align: center;
+          font-size: 42px;
+          font-weight: 600;
+          letter-spacing: 10px;
+          padding: 60px 0;
+        }
+
+        .cert-content {
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 24px;
+          padding-bottom: 40px;
+          text-align: center;
+        }
+
+      }
+
+      .item-right {
+        flex: 1;
+        min-width: 45%;
+        max-width: 45%;
+        padding-right: 30px;
+
+        .item-text-img {
+          padding-bottom: 60px;
+
+          p {
+            font-size: 16px;
+            line-height: 30px;
+            text-indent: 65px;
+          }
+
+          div {
+            float: right;
+            width: 80px;
+            height: 110px;
+            margin-left: 10px;
+            display: inline;
+            border: solid 1px #000;
+
+            img {
+              width: 100%;
+            }
+          }
+        }
+
+        .item-org {
+          display: flex;
+          justify-content: space-between;
+        }
+
+        .item-date {
+          text-align: center;
+          padding: 15px 20px 20px 20px;
+        }
+      }
+
+
+
+
+
+
+    }
+  }
+
+  .cert-form {
+    flex: 1;
+    max-width: 300px;
+    padding: 20px 10px 20px 0;
+
+    .item-form-date {
+      .el-date-editor {
+        width: 100%;
+      }
+    }
+
+    .image-detail {
+      p {
+        display: block !important;
+        font-size: 12px;
+        color: #ccc;
+        margin-top: 5px;
+        line-height: 16px;
+      }
+    }
+  }
+}
